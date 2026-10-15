@@ -1,3 +1,5 @@
+import { ToDoItem } from "../ToDoItem/ToDoItem.jsx";
+
 export function TodoList() {
     const arrTodo = [
         "To do homework",
@@ -11,7 +13,7 @@ export function TodoList() {
             <h2>Todo List</h2>
             <ul>
                 {arrTodo.map((todo, index) => (
-                    <li key={index}>{todo}</li>
+                    <ToDoItem key={index} todo={todo} />
                 ))}
             </ul>   
         </div>
